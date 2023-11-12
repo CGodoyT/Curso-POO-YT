@@ -4,7 +4,8 @@ class Persona:
         self.edad = edad
 
     def presentarse(self):
-        print(f"Soy {self.nombre}, y tengo {self.edad}")
+        print(f"Soy {self.nombre}, y tengo {self.edad} años")
+
 
 class Estudiante(Persona):
     def __init__(self, nombre, edad, grado):
@@ -13,6 +14,7 @@ class Estudiante(Persona):
 
     def mostrar_grado(self):
         print(f"Mi grado es {self.grado}")
+
 
 estudiante1 = Estudiante("Cristian", 12, "octavo")
 estudiante1.presentarse()
